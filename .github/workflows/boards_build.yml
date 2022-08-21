@@ -37,3 +37,8 @@ jobs:
         run: ./deploy.py --board=nrf52840_dongle_dfu --no-app --programmer=none
       - name: Building board nrf52840_mdk_dfu
         run: ./deploy.py --board=nrf52840_mdk_dfu --no-app --programmer=none
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: hex-files
+          path: target/*.hex
