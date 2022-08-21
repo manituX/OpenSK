@@ -399,7 +399,7 @@ index 0000000..de08246
 +    /// This doesn't fail and always returns a value.
 +    fn get_protection(&self) -> ProtectionLevel;
 +
-+    /// Sets the firmware protection level.
++    /// Sets the firmware protection level. 
 +    /// There are four valid return values:
 +    ///   - SUCCESS: protection level has been set to `level`
 +    ///   - FAIL: something went wrong while setting the protection
